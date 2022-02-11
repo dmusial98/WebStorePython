@@ -2,11 +2,15 @@ from ..models import Product
 from . import serializers
 from rest_framework import generics, status
 from rest_framework.response import Response
+from django_filters.rest_framework import DjangoFilterBackend
 
 class ProductListView(generics.ListAPIView):
     queryset = Product.objects.all()
     serializer_class = serializers.ProductSerializer
     # permission_classes = [permissions.]
+    filter_backends = [DjangoFilterBackend]
+    filterset_fields = ['productId', 'productName', 'categoryType']
+    ordering = ['id']
 
 class ProductCreateView(generics.CreateAPIView):
     queryset = Product.objects.all()

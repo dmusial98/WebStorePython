@@ -1,6 +1,6 @@
 # WebStorePython
 
-Simple web application with [Django Rest Framework](https://www.django-rest-framework.org/) and [Angular](https://angular.io/) using JSON Web Tocken for verification. Project made for university studies.
+Simple web application with [Django Rest Framework](https://www.django-rest-framework.org/) and [Angular](https://angular.io/) using [JSON Web Tocken](https://jwt.io/) for auhorization. Project made for university studies.
 
 ## Prerequisites for starting app
 

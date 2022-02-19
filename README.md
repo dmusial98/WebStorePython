@@ -72,6 +72,21 @@ Starting development server at http://127.0.0.1:8000/
 Quit the server with CTRL-BREAK.
 ```
 
+## Endpoints
+
+Available endpoints in backend app:
+* ```admin/``` - allows for managing entities in database
+* ```products/``` - getting all products from database
+* ```products/create/``` - creating one product with POST HTTP method
+* ```products/{id}/``` - getting (with GET) or editing (with PUT) product
+* ```users/``` - getting all users from database
+* ```users/create/``` - creating new user with POST HTTP method
+* ```users/byName/{name}/``` - getting user with specified username
+* ```carts/``` - getting carts of all clients
+* ```carts/add/``` - added new cart for user
+* ```api/token/``` - login to server, in JSON response can get access token and refresh token from JWT (POST method)
+* ```api/token/refresh/``` - getting refresh token from JWT
+
 ## License
 
 This is free and unencumbered software released into the public domain.
